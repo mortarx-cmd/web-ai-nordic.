@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompting Guide - Nordic Summit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">AI Prompting Guide</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#what-is-ai">What is AI</a></li>
+                <li><a href="#key-concepts">Key Concepts</a></li>
+                <li><a href="#how-to-prompt">How to Prompt</a></li>
+                <li><a href="#examples">Interactive Examples</a></li>
+                <li><a href="#prompt-generator">Prompt Generator</a></li>
+                <li><a href="#capabilities">AI Capabilities</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome Leaders from Nordic Summit</h1>
+            <h2>Your Guide to Effective AI Prompting</h2>
+            <p>Discover how to communicate effectively with AI to get the best results</p>
+            <a href="#how-to-prompt" class="cta-button">Learn How to Prompt</a>
+        </div>
+        <div class="hero-particles"></div>
+    </section>
+
+    <section id="what-is-ai" class="content-section">
+        <div class="container">
+            <h2>What is AI?</h2>
+            
+            <div class="ai-concept-grid">
+                <div class="ai-concept-card">
+                    <div class="concept-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neural Networks</h3>
+                    <p>AI is based on neural networks inspired by the human brain, with interconnected nodes that process information in layers.</p>
+                    <div class="concept-image">
+                        <img src="images/ai_brain.jpeg" alt="Neural Networks" class="card-image">
+                    </div>
+                </div>
+                
+                <div class="ai-concept-card">
+                    <div class="concept-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Pattern Recognition</h3>
+                    <p>AI learns patterns from data and uses probability to predict the next word in a sequence, simulating human intelligence.</p>
+                    <div class="concept-image">
+                        <img src="images/ai_digital.jpeg" alt="Pattern Recognition" class="card-image">
+                    </div>
+                </div>
+                
+                <div class="ai-concept-card">
+                    <div class="concept-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Large Language Models</h3>
+                    <p>Modern AI systems like ChatGPT are trained on vast amounts of text data from the internet, books, and articles.</p>
+                    <div class="concept-image">
+                        <img src="images/ai_network.jpeg" alt="Large Language Models" class="card-image">
+                    </div>
+                </div>
+                
+                <div class="ai-concept-card">
+                    <div class="concept-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Creative Generation</h3>
+                    <p>AI can generate human-like text, translate languages, write creative content, and answer questions informatively.</p>
+                    <div class="concept-image">
+                        <img src="images/ai_digital_hand.webp" alt="Creative Generation" class="card-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-box ai-limitations">
+                <h3>AI is not omniscient</h3>
+                <div class="limitations-grid">
+                    <div class="limitation-item">
+                        <i class="fas fa-rocket"></i>
+                        <p><strong>Dare to try</strong> – Start small and experiment. You learn more by doing than waiting for perfect answers.</p>
+                    </div>
+                    <div class="limitation-item">
+                        <i class="fas fa-hat-wizard"></i>
+                        <p><strong>No magic</strong> – AI requires structure, data and people with direction. It's a tool, not a solution to everything.</p>
+                    </div>
+                    <div class="limitation-item">
+                        <i class="fas fa-question-circle"></i>
+                        <p><strong>Be curious</strong> – Ask questions, test ideas and use AI as a creative partner to explore new possibilities.</p>
+                    </div>
+                    <div class="limitation-item">
+                        <i class="fas fa-sync-alt"></i>
+                        <p><strong>Change perspective</strong> – Let AI challenge your habit patterns and show new ways of looking at things.</p>
+                    </div>
+                    <div class="limitation-item">
+                        <i class="fas fa-hourglass-half"></i>
+                        <p><strong>Be patient</strong> – Good results require time, practice, and adjustments. It is a process, not a shortcut.</p>
+                    </div>
+                    <div class="limitation-item">
+                        <i class="fas fa-search"></i>
+                        <p><strong>AI ignores truth</strong> – It finds patterns, not meaning. You must be responsible for interpretation and verification.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="key-concepts" class="content-section alt-bg">
+        <div class="container">
+            <h2>Key Concepts & Terminology</h2>
+            <p class="section-intro">Understanding the fundamental building blocks of prompt engineering and AI language models.</p>
+            
+            <div class="expandable-container">
+                <div class="expandable-item">
+                    <div class="expandable-header">
+                        <div class="concept-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <div class="concept-text">
+                            <h3>Prompt</h3>
+                            <p>A specific instruction, question, or piece of text provided to an AI model to elicit a response or guide its output.</p>
+                        </div>
+                        <button class="expand-button">Learn More</button>
+                    </div>
+                    <div class="expandable-content">
+                        <p>Prompts can range from simple questions to complex instructions with context, examples, and constraints. The quality of a prompt heavily influences the quality of the AI-generated output.</p>
+                    </div>
+                </div>
+                
+                <div class="expandable-item">
+                    <div class="expandable-header">
+                        <div class="concept-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="concept-text">
+                            <h3>Large Language Model (LLM)</h3>
+                            <p>An advanced AI model trained on vast amounts of text data to understand, generate, and manipulate human language.</p>
+                        </div>
+                        <button class="expand-button">Learn More</button>
+                    </div>
+                    <div class="expandable-content">
+                        <p>LLMs like GPT (Generative Pre-trained Transformer) are the engines behind many generative AI applications. They learn patterns and relationships in language to perform tasks like translation, summarization, and content creation.</p>
+                    </div>
+                </div>
+                
+                <div class="expandable-item">
+                    <div class="expandable-header">
+                        <div class="concept-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <div class="concept-text">
+                            <h3>Tokens</h3>
+                            <p>The basic units of text that LLMs process. A token can be a word, part of a word, or punctuation.</p>
+                        </div>
+                        <button class="expand-button">Learn More</button>
+                    </div>
+                    <div class="expandable-content">
+                        <p>For example, the phrase "Prompt engineering is cool" might be tokenized into ["Prompt"], [" engineering"], [" is"], [" cool"]. LLMs have limits on the number of tokens they can process in a single prompt and response (context window).</p>
+                    </div>
+                </div>
+                
+                <div class="expandable-item">
+                    <div class="expandable-header">
+                        <div class="concept-icon">
+                            <i class="fas fa-window-maximize"></i>
+                        </div>
+                        <div class="concept-text">
+                            <h3>Context Window</h3>
+                            <p>The maximum number of tokens an LLM can consider at one time, including both the input prompt and its generated output.</p>
+                        </div>
+                        <button class="expand-button">Learn More</button>
+                    </div>
+                    <div class="expandable-content">
+                        <p>A larger context window allows the model to remember more information from earlier in a conversation or a longer piece of text, leading to more coherent and contextually relevant responses.</p>
+                    </div>
+                </div>
+                
+                <div class="expandable-item">
+                    <div class="expandable-header">
+                        <div class="concept-icon">
+                            <i class="fas fa-thermometer-half"></i>
+                        </div>
+                        <div class="concept-text">
+                            <h3>Temperature / Creativity</h3>
+                            <p>A parameter that controls the randomness of an LLM's output. Higher values lead to more creative and diverse responses, while lower values make the output more focused and deterministic.</p>
+                        </div>
+                        <button class="expand-button">Learn More</button>
+                    </div>
+                    <div class="expandable-content">
+                        <p>For creative tasks like writing a story, a higher temperature might be preferred. For factual recall or summarization, a lower temperature is often better to reduce hallucinations or deviations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to-prompt" class="content-section">
+        <div class="container">
+            <h2>How to Prompt Effectively</h2>
+            <div class="prompt-framework-container">
+                <div class="prompt-framework">
+                    <div class="framework-item">
+                        <div class="icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Who</h3>
+                        <p>Indicate your identity and desired AI persona for personalized answers</p>
+                    </div>
+                    <div class="framework-item">
+                        <div class="icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3>What</h3>
+                        <p>Describe the problem clearly to ensure relevant AI responses</p>
+                    </div>
+                    <div class="framework-item">
+                        <div class="icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>How</h3>
+                        <p>Define expectations on AI responses and output format</p>
+                    </div>
+                    <div class="framework-item">
+                        <div class="icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Follow up</h3>
+                        <p>Ask questions and give feedback to refine AI responses</p>
+                    </div>
+                </div>
+                <div class="image-container prompt-image">
+                    <img src="images/ai_tech_horizontal.jpeg" alt="AI Digital Interface" class="feature-image">
+                </div>
+            </div>
+            
+            <div class="two-column prompt-tips-container">
+                <div class="column">
+                    <div class="prompt-tips">
+                        <h3>Advanced Prompting Techniques</h3>
+                        <ul>
+                            <li><strong>Be specific:</strong> The more details you provide, the better the AI can tailor its response</li>
+                            <li><strong>Use examples:</strong> Show the AI what you want by including examples in your prompt</li>
+                            <li><strong>Break down complex tasks:</strong> Split complicated requests into smaller, manageable steps</li>
+                            <li><strong>Specify format:</strong> Tell the AI exactly how you want the information structured (bullet points, paragraphs, table, etc.)</li>
+                            <li><strong>Iterate and refine:</strong> Don't expect perfect results on the first try; use follow-up prompts to improve outputs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="info-box">
+                        <h3>Common Prompting Mistakes</h3>
+                        <ul>
+                            <li><strong>Being too vague:</strong> "Write something about business" vs. "Write a 500-word analysis of remote work trends in the tech industry since 2020"</li>
+                            <li><strong>Overloading with instructions:</strong> Trying to accomplish too many things in a single prompt</li>
+                            <li><strong>Not providing context:</strong> Failing to give the AI necessary background information</li>
+                            <li><strong>Ignoring iteration:</strong> Expecting perfect results without refining your prompts</li>
+                            <li><strong>Forgetting to specify audience:</strong> Not indicating who the content is for (technical experts, beginners, etc.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="examples" class="content-section alt-bg">
+        <div class="container">
+            <h2>Interactive Examples</h2>
+            <div class="interactive-example">
+                <h3>Basic vs. Effective Prompt</h3>
+                <div class="example-container">
+                    <div class="example-column">
+                        <h4>Basic Prompt <span class="not-recommended">Not Recommended</span></h4>
+                        <div class="prompt-box basic">
+                            <p>Write about AI.</p>
+                            <div class="warning-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Too vague!</span>
+                            </div>
+                        </div>
+                        <div class="result-box">
+                            <p>Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving...</p>
+                            <div class="result-quality poor">
+                                <i class="fas fa-thumbs-down"></i>
+                                <span>Generic, lacks focus and personalization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-column">
+                        <h4>Effective Prompt <span class="recommended">Recommended</span></h4>
+                        <div class="prompt-box effective">
+                            <p><strong>WHO:</strong> I am a team leader preparing a presentation for my colleagues.<br>
+                            <strong>WHAT:</strong> I need a concise explanation of AI that non-technical people can understand.<br>
+                            <strong>HOW:</strong> Please use simple analogies and limit to 3 key points. Include one example of AI in everyday business.<br>
+                            <strong>FOLLOW UP:</strong> I may need to adapt this for different departments.</p>
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Well structured!</span>
+                            </div>
+                        </div>
+                        <div class="result-box">
+                            <p>Here's a simple explanation of AI for your presentation:</p>
+                            <p><strong>1. AI is like a student that learns from examples</strong> - Just as students learn from textbooks and practice, AI learns from data we provide it.</p>
+                            <p><strong>2. AI finds patterns humans might miss</strong> - Like how a financial analyst spots trends, but AI can process millions of transactions instantly.</p>
+                            <p><strong>3. AI automates repetitive tasks</strong> - Similar to how email filters sort your inbox, but for complex business processes.</p>
+                            <p><strong>Business Example:</strong> Customer service chatbots that handle common questions, freeing your team to focus on complex customer needs.</p>
+                            <div class="result-quality good">
+                                <i class="fas fa-thumbs-up"></i>
+                                <span>Targeted, concise, and practical</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-example">
+                <h3>More Real-World Examples</h3>
+                <div class="example-container">
+                    <div class="example-column">
+                        <h4>Content Creation</h4>
+                        <div class="prompt-box effective">
+                            <p><strong>WHO:</strong> I am a marketing manager for a sustainable clothing brand.<br>
+                            <strong>WHAT:</strong> I need 5 engaging social media post ideas highlighting our eco-friendly materials.<br>
+                            <strong>HOW:</strong> Each idea should include a hook, main message, and call to action. Keep them under 280 characters for Twitter compatibility.<br>
+                            <strong>FOLLOW UP:</strong> I'll need to adapt these for different platforms later.</p>
+                        </div>
+                    </div>
+                    <div class="example-column">
+                        <h4>Data Analysis</h4>
+                        <div class="prompt-box effective">
+                            <p><strong>WHO:</strong> I'm a financial analyst preparing a quarterly report.<br>
+                            <strong>WHAT:</strong> I need help interpreting these sales trends [data described here] and identifying key insights.<br>
+                            <strong>HOW:</strong> Please provide 3-4 main observations, potential causes for any anomalies, and suggestions for metrics to monitor next quarter. Format as bullet points.<br>
+                            <strong>FOLLOW UP:</strong> I may need to dig deeper into specific trends you identify.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prompt-generator" class="content-section">
+        <div class="container">
+            <h2>Prompt Generator</h2>
+            <p class="section-intro">Build your own effective prompts using the WHO/WHAT/HOW/FOLLOW UP framework.</p>
+            
+            <div class="prompt-generator-container">
+                <div class="prompt-generator-image">
+                    <img src="images/ai_tech_horizontal.jpeg" alt="AI Network" class="feature-image horizontal-image">
+                </div>
+                <div class="interactive-prompt-builder">
+                    <h3>Build Your Own Prompt</h3>
+                    <div class="prompt-builder">
+                        <div class="builder-section">
+                            <label for="who-input">WHO:</label>
+                            <textarea id="who-input" placeholder="Indicate your identity and desired AI persona..."></textarea>
+                        </div>
+                        <div class="builder-section">
+                            <label for="what-input">WHAT:</label>
+                            <textarea id="what-input" placeholder="Describe your problem or request clearly..."></textarea>
+                        </div>
+                        <div class="builder-section">
+                            <label for="how-input">HOW:</label>
+                            <textarea id="how-input" placeholder="Define your expectations for the response..."></textarea>
+                        </div>
+                        <div class="builder-section">
+                            <label for="followup-input">FOLLOW UP:</label>
+                            <textarea id="followup-input" placeholder="Additional context or specific questions..."></textarea>
+                        </div>
+                        <div class="builder-output">
+                            <h4>Your Complete Prompt:</h4>
+                            <div id="complete-prompt" class="prompt-output">
+                                <p>Your prompt will appear here as you type...</p>
+                            </div>
+                            <button id="copy-prompt" class="copy-button">Copy Prompt</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="prompt-tips-box">
+                <h3>Tips for Using Your Generated Prompt</h3>
+                <ul>
+                    <li>Copy and paste your generated prompt directly into your preferred AI tool</li>
+                    <li>Review and refine your prompt before submitting for best results</li>
+                    <li>Remember that the more specific you are, the better your results will be</li>
+                    <li>Use the FOLLOW UP section to iterate and improve on initial responses</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="capabilities" class="content-section alt-bg">
+        <div class="container">
+            <h2>AI Capabilities</h2>
+            <p class="section-intro">Explore the diverse applications and capabilities of modern AI systems.</p>
+            
+            <div class="capabilities-grid">
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Learning</h3>
+                    <p>AI adapts in learning experiences for continuous growth, improving with more data and feedback</p>
+                    <div class="capability-image">
+                        <img src="images/ai_brain.jpeg" alt="AI Learning" class="card-image">
+                    </div>
+                </div>
+                
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Information Management</h3>
+                    <p>AI helps structure and analyze all types of text efficiently, extracting insights from large volumes of data</p>
+                    <div class="capability-image">
+                        <img src="images/ai_digital.jpeg" alt="AI Information Management" class="card-image">
+                    </div>
+                </div>
+                
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Graphic Creation</h3>
+                    <p>AI can help generate images, graphic elements, and visual materials based on text descriptions</p>
+                    <div class="capability-image">
+                        <img src="images/ai_digital_hand.webp" alt="AI Graphic Creation" class="card-image">
+                    </div>
+                </div>
+                
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Workflow Optimization</h3>
+                    <p>AI identifies and automates data for efficiency, streamlining processes and reducing manual work</p>
+                    <div class="capability-image">
+                        <img src="images/ai_network.jpeg" alt="AI Workflow Optimization" class="card-image">
+                    </div>
+                </div>
+                
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Language Translation</h3>
+                    <p>AI can translate between languages with increasing accuracy, helping bridge communication gaps</p>
+                    <div class="capability-image">
+                        <img src="images/ai_robot.png" alt="AI Language Translation" class="card-image">
+                    </div>
+                </div>
+                
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analysis</h3>
+                    <p>AI can identify patterns and trends in large datasets that might be missed by human analysts</p>
+                    <div class="capability-image">
+                        <img src="images/ai_circuit.webp" alt="AI Data Analysis" class="card-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-box" style="margin-top: 3rem;">
+                <h3>AI Limitations to Consider</h3>
+                <ul>
+                    <li><strong>Hallucinations:</strong> AI can generate plausible-sounding but incorrect information</li>
+                    <li><strong>Knowledge cutoff:</strong> Models have a training cutoff date and don't know about events after that date</li>
+                    <li><strong>Lack of true understanding:</strong> AI recognizes patterns but doesn't truly comprehend meaning</li>
+                    <li><strong>Bias in training data:</strong> Models can reflect and amplify biases present in their training data</li>
+                    <li><strong>Context limitations:</strong> Models have finite context windows and can't process unlimited information</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nordic Summit AI Workshop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
